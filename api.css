@@ -1,0 +1,130 @@
+body{
+    font-family: Arial, sans-serif;
+    background-image: url(IN-en-20231016-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-color: rgba(0, 0, 0, 0.271);
+    background-blend-mode: overlay;
+    z-index: 0;
+}
+nav{
+    position: relative;
+    top:0%;
+    left: 0%;
+    display: flex;
+    flex-direction: row;
+    height:2%;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0%;
+}
+nav>ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 75%;
+
+}
+nav>ul>li{
+    padding-left: 10px;
+   list-style: none;
+}
+.overlay{
+    position: absolute;
+    top: 5%;
+    background: rgba(0, 0, 0, 0.088);
+
+}
+nav>img{
+    position: relative;
+    height: 39px;
+    width: auto;
+    left: 20px;
+}
+p,h1,h3,h6{
+    color: white;
+    position: relative;
+
+}
+p,h1,h3,h6{
+    text-align:center;
+    top: 20vh;
+}
+h6{
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    font-family: cursive;
+}
+nav>ul>li>a{
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+nav>ul>li>a:hover{
+    transform: translate(0,-5px);
+    color:rgb(195, 12, 12);
+}
+input,button{
+    position: relative;
+    top: 15vh;
+    left: 35vw;
+}
+input{
+    border: 2px solid darkgrey;
+    width: 160px;
+    height: 20px;
+    background: #a84909;
+    border-radius: 40px;
+    outline: none;
+    box-shadow: none;
+    margin-top: 40px;
+    padding: 10px;
+    width: 70%;
+    max-width: 300px;
+    background-color: transparent;
+    color: white;
+}
+input:focus{
+    border: 2px solid white;
+}
+form>button{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(205, 16, 54);
+    border: none;
+    color: white;
+    font-size: 1em;
+    margin: 10px;
+    top: 15vh;
+    left: 35vw;
+}
+button{
+position: relative;
+cursor: pointer;
+padding: 10px;
+left: 35vw;
+top: 30vh;
+}
+#button{
+    display: inline-block;
+    text-align: center;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 8vw;
+    color: white;
+    font-size: medium;
+}
+#btn{
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    background-color: rgb(205, 16, 54);
+    color: white;
+    font-size: medium;
+    border-radius: 10px;
+    width: 6vw;
+
+}

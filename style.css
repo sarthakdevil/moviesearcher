@@ -1,0 +1,86 @@
+body {
+    font-family: Arial;
+    background-color: rgba(13, 11, 11, 0.656);
+    color: #333;
+    background-image: url(IN-en-20231016-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-blend-mode: overlay;
+
+}
+form{
+    position: absolute;
+    border: 1px solid #ddd;
+    border-radius: .25rem;
+    align-items: center;
+    align-self: center;
+    height: 90vh;
+    width: 40%;
+    left: 30vw;  
+    top:6vh;  
+    background-color: rgba(13, 11, 11, 0.823);
+}
+input{
+    position: relative;
+    align-self: center;
+    left: 7vw;
+    top:3vh;
+    margin: 5vh;
+    padding: 6px;
+    text-align: center;
+    display: block;
+    width: 20vw;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+}
+.linear-gradient-border {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #f06, #9f6) 1; 
+    border-image-slice: 1;
+    padding: 10px; 
+    box-shadow: 10px;
+  }
+button{
+    position: relative;
+    left: 13vw;
+    top:10vh;
+    background-color: transparent;
+    color: #ddd;
+    padding: 10px;
+    width: 15vw;
+    border-radius: 20px;
+}
+a{
+    position: relative;
+    font-size: 1em;
+    left: 16vw;
+    top:10vh;
+    color: rgb(19, 19, 244);
+}
+ #registerpl{
+    position: relative;
+    left: 18.5vw;
+    top: 15vh;
+    color: rgb(19, 19, 244);
+
+ }
+ #alert {
+    display: none; 
+    position: relative;
+    padding: 15px;
+    background-color: #f44336; 
+    color: white;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+
+#alert .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#alert .close:hover {
+    background-color: #d32f2f; 
+}
