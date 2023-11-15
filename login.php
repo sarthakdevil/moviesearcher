@@ -8,8 +8,8 @@
 </head>
 <body>
     <form method="post" class="linear-gradient-border">
-        <input type="email" placeholder="email" name="email"><br>
-        <input type="password" placeholder="password" name="pass">
+        <input type="email" placeholder="email" name="email" required><br>
+        <input type="password" placeholder="password" name="pass" required>
         <button type="submit">login</button>
         <a href="http://localhost/sarkx/register.php" id="registerpl"><p>register?</p></a>
 </form>
@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $pass = $_POST['pass'];
 
-    $sql = "SELECT * FROM register WHERE email = ? AND password = ?";
+    $sql = "SELECT * FROM users WHERE email = ? AND password = ?";
     $stmt = mysqli_prepare($conn, $sql);
 
     if ($stmt) {
@@ -32,6 +32,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($num == 1) {
             echo "success";
+            session_start();
+            $_SESSION['user'] = $email;
+            header("Location:mainpage.html");
+        
         } else {
             echo "invalid credentials";
         }

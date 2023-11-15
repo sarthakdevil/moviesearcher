@@ -8,10 +8,10 @@
 </head>
 <body>
     <form method="post" class="linear-gradient-border">
-        <input class="" type="name" placeholder="Name" name="Name" id="Name"><br>
-        <input type="email" placeholder="email" name="email"><br>
-        <input type="password" placeholder="pass" name="pass" id="pass">
-        <input type="password" placeholder="cpass" name="cpass" id="cpass">
+        <input class="" type="name" placeholder="Name" name="Name" id="Name" required><br>
+        <input type="email" placeholder="email" name="email" required><br>
+        <input type="password" placeholder="pass" name="pass" id="pass" required>
+        <input type="password" placeholder="cpass" name="cpass" id="cpass" required>
         <button type="submit">Register</button>
         <a href="http://localhost/sarkx/login.php"><p>Already registered?</p></a>
 </form>
@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection failed: " . mysqli_connect_error());
     }
     if($pass == $cpass){
-    $sql = "INSERT INTO `register`(`name`, `email`, `password`) VALUES (?, ?, ?)";
+    $sql = "INSERT INTO `users`(`name`, `email`, `password`) VALUES (?, ?, ?)";
     $stmt = mysqli_prepare($conn, $sql);
     }else{
         echo "password must be same as confirm password";

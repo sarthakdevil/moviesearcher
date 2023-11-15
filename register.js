@@ -6,7 +6,7 @@ function closeAlert() {
     var alert = document.getElementById("alert");
     alert.style.display = "none";
 }
-document.addEventListener("DOMContentLoaded", function() {
+document.adddEventListener("DOMContentLoaded", function() {
     var passInput = document.getElementById("pass");
     var cpassInput = document.getElementById("cpass");
 

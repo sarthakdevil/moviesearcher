@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Trailer</title>
+</head>
+<body>
+<label for="cat">Choose category</label>
+<select name="cat" id="cat">
+  <option value="games">games</option>
+  <option value="movie">movie</option>
+</select>
+
+    <input type="text" name="search" placeholder="Enter movie name" autocomplete="off"  id="name">
+    <button onclick="getData()">Search Movie</button>
+    <div id="imgContainer">
+    </div>
+    <div id="moviediv">
+       </div>
+    </div>
+    <script src="apiinit.js"></script>
+    <script src="api.js">
+</script>
+    
+</body>
+</html>

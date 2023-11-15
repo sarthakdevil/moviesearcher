@@ -1,0 +1,60 @@
+input,button{
+    position: relative;
+    left: 37vw;
+    border-radius: 10px;
+}
+input{
+    width: 28%;
+    height: 3.7em;
+    margin-left: -60px;
+    padding: 0 10px;
+    border: 5px solid white;
+    
+}
+body{
+    background-color: rgb(22, 21, 21);
+}
+
+#overlay {
+  position: fixed;
+  display: none; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  transition: opacity 0.4s ease-in-out;
+  z-index: 2; 
+  cursor: pointer; 
+}
+#content
+{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:white;
+  font-size:20px;
+}
+.container:hover .overlay{
+ opacity:0.8%
+}
+#comm{
+  text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#cat{
+  position: relative;
+  text-align:center;
+  left: 30%;
+  top:0%;
+  background-color: transparent;
+  color: white;
+
+}
+label{
+  color:white;
+}
